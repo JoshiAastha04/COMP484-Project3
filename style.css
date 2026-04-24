@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+#app-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+#main-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0 0 24px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    letter-spacing: -0.5px;
+}
+
+#app-container h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 28px 0 12px;
+}
+
+#control-panel {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+#control-panel a {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    background: #667eea;
+    color: white;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#control-panel a:hover {
+    background: #5a6fd6;
+    transform: translateY(-1px);
+}
+
+#control-panel button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    background: white;
+    color: #667eea;
+    font-family: 'Inter', Arial, sans-serif;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+#control-panel button:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-1px);
+}
+
+#status-output {
+    border: none;
+    padding: 16px 20px;
+    margin-top: 16px;
+    background: linear-gradient(135deg, #e0f7fa, #e8f4fd);
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+#status-output p {
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 4px;
+}
+
+#status-output span {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+#item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#item-list li {
+    padding: 10px 16px;
+    background: #f8f9ff;
+    border-radius: 8px;
+    border-left: 3px solid #667eea;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+#item-list li:hover {
+    background: #eef0ff;
+}
+
+/* --- Task 2 Requirement: The Hiding Class --- */
+/* This class must be defined to enable the toggle functionality later. */
+.hidden {
+    /* Sets the element to be completely invisible and not take up space. */
+    display: none;
+}
